@@ -1,18 +1,17 @@
-﻿let myArray= []
-for(let i =0 ; i< 3 ; i++){
-  let number= +(prompt('enter the number'))
-  myArray.push(number)
-}
+﻿let userName= prompt('Enter the \'666\' ')
+let myArray=[
+  {id:1 , name: '369'},
+  {id:2 , name: '40'},
+  {id:3 , name: '27'},
+  {id:4 , name: userName},
+]
+  if(userName === '666'){
+      let isInMyArray = myArray.findIndex(name =>{
+      return (name.name === '666')
+  })
+      myArray.splice(isInMyArray, 1)
+      console.log(myArray)
+  }else{
+      console.log('No There Is Not The Name With 666 In myArray',myArray)
+  }
 
-// Slice-Method
-console.log(myArray)             //show the array for example [1, 2, 3]
-myArray.splice(1, 1)            //delete the second item
-console.log(myArray)           // [1, 3]
-myArray.splice(1, 1, 4, 5)    //delete the second item and add items from the second item
-console.log(myArray)         // [1, 4, 5]
-
-// FindIndex-Method
-let IndexNumber = myArray.findIndex(index=>{
-  return(index===5)
-})
-console.log(IndexNumber)   //2
