@@ -2,6 +2,7 @@ let getUserNumber
 let myArray = []
 let firstNumber 
 let SecondNumber 
+let thierdNumber
 let sumDigit = 0 
 let sumAllNumbers =0
 
@@ -12,6 +13,7 @@ for(let i = 0 ; i < 3 ; i++){
    myArray.push(getUserNumber)
    firstNumber = myArray[0]
    SecondNumber = myArray[1]
+   thierdNumber = myArray[2]
 
    sumAllNumbers+= getUserNumber
   
@@ -25,7 +27,7 @@ for(let i = 0 ; i < 3 ; i++){
     
 alert('Sum Of FirstNumber Digis is : ' + sumDigit)           // Sum digits Of First Number
 
-alert('The Muximum Number Is : ' + Math.max(getUserNumber))  // Muximum Numbers
+alert('The Muximum Number Is : ' + Math.max(firstNumber, SecondNumber, thierdNumber))  // Muximum Numbers
 
 alert ('Sum Of all three Numbers Is : ' + sumAllNumbers)     // Sum of All Numbers
 
